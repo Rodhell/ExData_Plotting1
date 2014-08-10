@@ -5,7 +5,7 @@ hpc=read.table("household_power_consumption.txt", header = T , sep = ";")
 
 #First we will extract data from the only 2-day period we want to look at into 
 #a subset of HPC dataframe adn then convert the  Date Variable by using as.Date and :
-extract <- subset(hpc, Date == '1/2/2007' | Date == '2/2/2007')
+extract = subset(hpc, Date == '1/2/2007' | Date == '2/2/2007')
 extract$Date=as.Date(extract$Date, format = "%d/%m/%Y")
 
 #Now we have to format Time variable to a Date-Time format using strptime funcition
