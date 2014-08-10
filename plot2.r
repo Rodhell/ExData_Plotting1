@@ -25,7 +25,7 @@ plot2=extract
 #width of 480 pixels and a height of 480 pixels and transparent background:
 #Plot 2
 png("Plot2.png",width=480,height=480,bg="transparent")
-plot(plot2$Time,data$Global_active_power,ylab="Global Active Power (kilowatts)",type="l",xlab="")
+plot(plot2$Time,plot2$Global_active_power,ylab="Global Active Power (kilowatts)",type="l",xlab="")
 dev.off()
 
 # i'm from Brasil, so you will see "qui", "sex", "sab" instead of "thu", "fri", "Sat", but that's right! 
